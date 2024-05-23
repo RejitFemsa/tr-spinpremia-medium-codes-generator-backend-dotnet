@@ -1,1 +1,0 @@
-# (opcional) - Proyectos de ejemplo #
