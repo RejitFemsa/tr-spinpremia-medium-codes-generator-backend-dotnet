@@ -1,0 +1,1 @@
+# Objetos que no pueden existir NUNCA en un paqete nuget #
