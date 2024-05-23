@@ -1,0 +1,59 @@
+# About
+- about:
+    version: 1.0
+    name: "Mediums2024"
+    description: 'Project to generate cards numbers for loyalty program with the new standard (May 2024)'
+    author: 'R3j17'
+
+# Tools Specifications
+- specs:
+    public: false,
+    back_office: true
+
+# Allowed commands to run the App
+- commands:
+    to_reach_from_browser: "dotnet dev-certs https --trust"
+    start_with_https: 
+        command: "dotnet run --launch-profile https"
+        url: https://localhost:7246/swagger/index.html
+    start_with_http:
+        command: "dotnet run"
+        url: http://localhost:5066/swagger/index.html
+    start: "dotnet watch --launch-profile https"
+    to_start_mysql_in_mac: "sudo /usr/local/mysql/support-files/mysql.server start"
+
+- **Validación (VAL)**
+- **Autenticación y Autorización (AUTH)**
+- **Recurso no encontrado (NF)**
+- **Conflicto (CON)**
+- **Error Interno del Servidor (SRV)**
+- **Servicio No Disponible (UNV)**
+-
+- * Apigee: APG**
+- **Backend (.NET): BCK**
+- **Gravty: LTY**
+
+<PREFIJO_COMPONENTE>-<CATEGORÍA>-<NÚMERO>
+
+- **APG-VAL-001**: Error de validación en la solicitud.
+- **APG-AUTH-001**: Error de autenticación.
+- **APG-NF-001**: Recurso no encontrado.
+- **BCK-VAL-001**: Error de validación en la lógica de negocio.
+- **BCK-AUTH-001**: Error de autorización.
+- **BCK-SRV-001**: Error interno del servidor.
+- **LTY-VAL-001**: Error de validación en el sistema de lealtad.
+- **LTY-SRV-001**: Error interno del servidor en el sistema de lealtad.
+- **LTY-DEP-001**: Error al comunicarse con el sistema de lealtad
+
+{
+  "status": 400,
+  "error_code": "BCK-VAL-001",
+  "message": "Validation error: required field missing.",
+  "details": [
+    {
+      "field": "email",
+      "message": "The 'email' field is required."
+    }
+  ],
+  "timestamp": "2024-05-17T19:35:19.815Z"
+}

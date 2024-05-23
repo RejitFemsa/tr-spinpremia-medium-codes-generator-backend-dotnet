@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CardsGeneratorBackend</name>
+    </assembly>
+    <members>
+        <member name="M:CardsGeneratorBackend.Controllers.MediumsController.Post(CardsGeneratorBackend.Models.CardsGeneratorPayload)">
+            <summary>
+            Generación de tarjetas por lote (mínimo 15)
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST /generate
+                {
+                    "count": 15,
+                    "prefix": "914"
+                }
+                
+            </remarks>
+            
+        </member>
+    </members>
+</doc>
